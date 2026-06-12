@@ -12,9 +12,11 @@ export default function ThankYouPage() {
         <h1 className="text-2xl font-bold text-gray-900 mb-2">
           Thank you!
         </h1>
+        <p className="rounded-xl bg-green-50 border border-green-200 text-green-800 font-medium px-4 py-3 mb-4">
+          Response saved successfully
+        </p>
         <p className="text-gray-600 mb-8">
-          The response has been recorded successfully. You may now start a
-          new questionnaire for the next participant.
+          You may now start a new questionnaire for the next participant.
         </p>
         <button
           onClick={() => navigate("/questionnaire")}

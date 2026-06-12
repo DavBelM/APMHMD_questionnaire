@@ -22,6 +22,7 @@ interface ResponseRow {
   anc_attended: string;
   anc_visits: string | null;
   distance_health_center: string;
+  travel_time_health_center: string;
   owns_phone: string;
   heard_wearable: string;
   willing_to_use: string;
@@ -176,6 +177,10 @@ export default function AdminDashboardPage() {
             <div className="grid sm:grid-cols-2 gap-6 mb-8">
               <ChartCard title="Age Distribution" data={countBy(rows, "age")} />
               <ChartCard title="District" data={countBy(rows, "district")} />
+              <ChartCard
+                title="Travel Time to Health Center"
+                data={countBy(rows, "travel_time_health_center")}
+              />
               <ChartCard
                 title="Willingness to Use Device"
                 data={countBy(rows, "willing_to_use")}

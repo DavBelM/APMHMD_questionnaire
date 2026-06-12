@@ -60,6 +60,12 @@ export default function ConsentPage() {
             18–45, and agrees to participate voluntarily.
           </p>
 
+          <p className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-blue-900">
+            Once you press submit, the answers cannot be deleted because no
+            names are attached to them. Please take your time before
+            submitting.
+          </p>
+
           <p className="text-center text-rose-600 font-medium">
             Your voice matters – simple taps make prenatal care safer for
             Rwanda families! ❤️

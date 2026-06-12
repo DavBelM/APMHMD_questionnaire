@@ -15,6 +15,7 @@ create table if not exists public.responses (
   anc_attended text not null,
   anc_visits text,
   distance_health_center text not null,
+  travel_time_health_center text not null,
 
   -- Section C: Technology Awareness
   owns_phone text not null,

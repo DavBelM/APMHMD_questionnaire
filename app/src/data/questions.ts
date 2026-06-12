@@ -10,6 +10,8 @@ export interface Question {
   allowOther?: boolean;
   /** Whether the question can be left blank (participant may skip). */
   optional?: boolean;
+  /** Reminder shown to the enumerator only, not part of the question text. */
+  researcherNote?: string;
 }
 
 export const SECTIONS = [
@@ -80,6 +82,13 @@ export const QUESTIONS: Question[] = [
     type: "single",
     options: ["Less than 1 km", "1–5 km", "More than 5 km"],
   },
+  {
+    id: "travel_time_health_center",
+    section: SECTIONS[1],
+    label: "How long does it take you to reach the nearest health center?",
+    type: "single",
+    options: ["Less than 15 min", "15–30 min", "More than 30 min"],
+  },
 
   // Section C
   {
@@ -112,8 +121,9 @@ export const QUESTIONS: Question[] = [
     options: [
       "Cost",
       "Lack of information",
-      "Fear of technology",
+      "I am not comfortable using technology",
       "Husband/family decision",
+      "Lack of trust in device",
     ],
     allowOther: true,
     optional: true,
@@ -123,10 +133,11 @@ export const QUESTIONS: Question[] = [
   {
     id: "prevent_complications",
     section: SECTIONS[3],
-    label:
-      "Do you think a monitoring band could help prevent pregnancy complications?",
+    label: "Do you think a monitoring band could help prevent complications?",
     type: "single",
     options: ["Yes", "No", "Not sure"],
+    researcherNote:
+      "If the participant becomes distressed by this question, pause and follow the distress support protocol.",
   },
   {
     id: "allow_chw_alerts",
