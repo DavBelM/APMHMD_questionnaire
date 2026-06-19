@@ -50,6 +50,14 @@ create policy "Allow authenticated read"
   to authenticated
   using (true);
 
+-- Allows supabase-js post-insert read to complete without error,
+-- while exposing zero rows to anonymous users.
+create policy "Allow anon post-insert select"
+  on public.responses
+  for select
+  to anon
+  using (false);
+
 -- To create an admin login: in Supabase Dashboard -> Authentication -> Users,
 -- add a user manually with an email/password. Use those credentials to log
 -- into the /admin page of this app.
