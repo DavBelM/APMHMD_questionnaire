@@ -36,11 +36,17 @@ alter table public.responses enable row level security;
 grant insert on public.responses to anon;
 grant select on public.responses to authenticated;
 
--- Anyone (anon key) can submit a response.
+-- Anyone (anon or logged-in enumerator) can submit a response.
 create policy "Allow anonymous insert"
   on public.responses
   for insert
   to anon
+  with check (true);
+
+create policy "Allow authenticated insert"
+  on public.responses
+  for insert
+  to authenticated
   with check (true);
 
 -- Only authenticated (admin) users can read responses.
