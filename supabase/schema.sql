@@ -32,6 +32,10 @@ create table if not exists public.responses (
 
 alter table public.responses enable row level security;
 
+-- Grant table-level privileges (required alongside RLS policies).
+grant insert on public.responses to anon;
+grant select on public.responses to authenticated;
+
 -- Anyone (anon key) can submit a response.
 create policy "Allow anonymous insert"
   on public.responses

@@ -30,7 +30,7 @@ export default function AdminLoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-100 via-white to-rose-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-linear-to-br from-slate-100 via-white to-rose-50 flex items-center justify-center p-4">
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-sm bg-white rounded-3xl shadow-xl p-8"

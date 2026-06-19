@@ -4,7 +4,7 @@ export default function ThankYouPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-white to-amber-50 flex items-center justify-center p-4 sm:p-8">
+    <div className="min-h-screen bg-linear-to-br from-rose-50 via-white to-amber-50 flex items-center justify-center p-4 sm:p-8">
       <div className="w-full max-w-md bg-white rounded-3xl shadow-xl p-8 sm:p-10 text-center">
         <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-green-100 text-4xl mb-4">
           ✅

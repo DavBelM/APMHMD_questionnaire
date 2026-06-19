@@ -4,7 +4,7 @@ export default function ConsentPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-white to-amber-50 flex items-center justify-center p-4 sm:p-8">
+    <div className="min-h-screen bg-linear-to-br from-rose-50 via-white to-amber-50 flex items-center justify-center p-4 sm:p-8">
       <div className="w-full max-w-2xl bg-white rounded-3xl shadow-xl p-6 sm:p-10">
         <div className="text-center mb-6">
           <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-rose-100 text-3xl mb-3">

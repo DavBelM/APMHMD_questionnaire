@@ -149,7 +149,7 @@ export default function QuestionnairePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-white to-amber-50 flex items-center justify-center p-4 sm:p-8">
+    <div className="min-h-screen bg-linear-to-br from-rose-50 via-white to-amber-50 flex items-center justify-center p-4 sm:p-8">
       <div className="w-full max-w-2xl bg-white rounded-3xl shadow-xl p-6 sm:p-10">
         {/* Progress bar */}
         <div className="mb-6">
